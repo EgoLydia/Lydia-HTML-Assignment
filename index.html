@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio HTML</title>
+    <meta property="og:site_name" content="Lydia Ego">
+    <meta property="og:title" content="Lydia Ego | Designer and Front End Developer &amp; Nice to meet you!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      body {
+        padding-left: 30px;
+        padding-right: 20px;
+      }
+
+      .nav-links>a{
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 20px;
+    margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar" style="background-color: aliceblue; padding: 20px">
+      <div class="nav-links" style="text-align: right">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+    <header>
+      <hgroup>
+           <h1>Hello! My name is <span style="color: red">Lydia</span></h1>
+        <h2>Designer And Front-end Developer</h2>
+        <h4>
+          I design and code beautifully simple things, and I love what I do.
+        </h4>
+      </hgroup>
+    </header>
+    <br>
+    <hr>
+    <main>
+      <section class="about">
+        <h1>About Me</h1>
+        <img src="image/lydia.png" alt="Lydia" style="width: 20%" />
+        <div>
+          <p>
+            I enjoy solving complex problems and turning them into simple and
+            beautiful interface designs. I also love the structure and logic of
+            coding and always strive to write
+            <i>snappy, reusable and efficient codes</i> whether it be HTML, CSS
+            or Javascript.I'm quietly confident, naturally curious, and always
+            working on improving my chops on design problems one at a time.
+          </p>
+          <p>
+            When i'm not coding or pushing commits, you will find me having fun
+            with friends or on the couch catching up with my favorite Kdrama
+            shows
+          </p>
+        </div>
+        <blockquote>
+          "As much as talent counts, effort counts twice.”
+          <cite>- Angela Duckworth, Grit</cite>
+        </blockquote>
+      </section>
+      <br>
+      <hr>
+      <section class="tools">
+        <h3>My Design Tools</h3>
+        <ul class="design-tools" style="list-style-type: circle">
+          <li>Corel Draw</li>
+          <li>Photoshop</li>
+          <li>Canva</li>
+        </ul>
+        <h3>My Dev Tools</h3>
+        <ol class="dev-tools" style="list-style-type: circle">
+          <li>Github</li>
+          <li>Visual Studio Code</li>
+          <li>GitBash</li>
+          <li>Tailwind</li>
+        </ol>
+      </section>
+      <br>
+      <hr>
+      <section class="projects">
+        <h3>PROJECTS</h3>
+        <article>
+          <div>
+            <h5>Recipe Blog</h5>
+            <p>
+              A simple one page blog website that shows how to prepare a classic
+              cheesecake. This was created using only HTML and CSS
+            </p>
+            <a
+              href="https://lydia-recipe-blog.netlify.app/"
+              class="project-button"
+              >See it live</a
+            >
+          </div>
+          <div>
+            <h5>Chart Presentation</h5>
+            <p>
+              A simple one page representing data in three different formats:
+              bar chart, pie chart and table. This was created using HTML, CSS
+              and Javascript
+            </p>
+            <a
+              href="https://cyphercrescent-lydia-project.netlify.app/"
+              class="project-button"
+              >See it live</a
+            >
+          </div>
+        </article>
+        <br>
+        <hr>
+      </section>
+      <section class="video-testimonial">
+          <h3>Client Testimonials</h3>
+          <div class="videos" style="text-align: center;">
+              <video autoplay loop src="video/Q&A Interactive Reels Video (2).mp4" style="width: 300px;"></video>
+              <video autoplay loop src="video/Q&A Interactive Reels Video (2).mp4" style="width: 300px;"></video>
+              <video autoplay loop src="video/Q&A Interactive Reels Video (2).mp4" style="width: 300px;"></video>
+          </div>
+      </section>
+      <br>
+      <hr>
+      <section class="contact">
+        <h3>CONTACT</h3>
+        <p class="contact-text">
+          If you'd like to work with me, you can drop me a message!
+        </p>
+        <a href="mailto:egolydia97@gmail.com" class="button">Let's Talk</a>
+        <p>Find me <strong>here!</strong></p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d213996.86781958753!2d6.872318341904399!3d4.874716717298218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cea39f2c48e3%3A0x53562bdd7d8832db!2sPort%20Harcourt!5e0!3m2!1sen!2sng!4v1648201697007!5m2!1sen!2sng"
+          width="1150"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <br>
+    <footer class="footer" style="padding: 50px; background: black; ">
+        <p class="footer-text" style="color: white; text-align: center;">&copy; 2022-Portfolio design by Lydia Ego</p>
+    </footer>
+  </body>
+</html>
