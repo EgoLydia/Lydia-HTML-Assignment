@@ -30,20 +30,24 @@
     </style>
   </head>
   <body>
-    <nav class="nav-bar" style="background-color: aliceblue; padding: 20px">
+    <header>
+    <nav id="nav-bar" style="background-color: aliceblue; padding: 20px">
       <div class="nav-links" style="text-align: right">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Testimonials</a>
-        <a href="#">Contact</a>
+        <a title="anchor tag" href="#">Home</a>
+        <a title="anchor tag" href="#">About</a>
+        <a title="anchor tag" href="#">Projects</a>
+        <a title="anchor tag" href="#">Testimonials</a>
+        <a title="anchor tag" href="#">Contact</a>
       </div>
     </nav>
-    <header>
-      <hgroup>
-           <h1>Hello! My name is <span style="color: red">Lydia</span></h1>
-        <h2>Designer And Front-end Developer</h2>
-        <h4>
+      <hgroup class="header-texts">
+          <div style="display: flex;">
+              <h1 title="h1 element">Hello! My name is <span style="color: red">Lydia</span></h1>
+              <audio id="player" title="audio element" src="audio/test1.mp3"></audio>
+              <button onclick="document.getElementById('player').play()" style="height: 10%; margin-top: 33px;">Play</button>
+          </div>
+        <h2 title="h2 element">Designer And Front-end Developer</h2>
+        <h4 title="h4 element">
           I design and code beautifully simple things, and I love what I do.
         </h4>
       </hgroup>
@@ -52,10 +56,10 @@
     <hr>
     <main>
       <section class="about">
-        <h1>About Me</h1>
-        <img src="image/lydia.png" alt="Lydia" style="width: 20%" />
+        <h1 title="h1 element">About Me</h1>
+        <img title="img element" src="image/lydia.png" alt="Lydia" style="width: 20%" />
         <div>
-          <p>
+          <p title="paragraph element">
             I enjoy solving complex problems and turning them into simple and
             beautiful interface designs. I also love the structure and logic of
             coding and always strive to write
@@ -63,59 +67,59 @@
             or Javascript.I'm quietly confident, naturally curious, and always
             working on improving my chops on design problems one at a time.
           </p>
-          <p>
+          <p title="paragraph element">
             When i'm not coding or pushing commits, you will find me having fun
             with friends or on the couch catching up with my favorite Kdrama
             shows
           </p>
         </div>
-        <blockquote>
+        <blockquote title="blockquote element">
           "As much as talent counts, effort counts twice.”
-          <cite>- Angela Duckworth, Grit</cite>
+          <cite title="cite element"> <em>- Angela Duckworth, Grit</em></cite>
         </blockquote>
       </section>
       <br>
       <hr>
-      <section class="tools">
-        <h3>My Design Tools</h3>
-        <ul class="design-tools" style="list-style-type: circle">
-          <li>Corel Draw</li>
-          <li>Photoshop</li>
-          <li>Canva</li>
+      <section id="tools">
+        <h3 title="h3 element">My Design Tools</h3>
+        <ul  class="design-tools" style="list-style-type: circle">
+          <li title="unordered list element">Corel Draw</li>
+          <li title="unordered list element">Photoshop</li>
+          <li title="unordered list element">Canva</li>
         </ul>
-        <h3>My Dev Tools</h3>
-        <ol class="dev-tools" style="list-style-type: circle">
-          <li>Github</li>
-          <li>Visual Studio Code</li>
-          <li>GitBash</li>
-          <li>Tailwind</li>
+        <h3 title="h3 element">My Dev Tools</h3>
+        <ol  class="dev-tools">
+          <li title="ordered list element">Github</li>
+          <li title="ordered list element">Visual Studio Code</li>
+          <li title="ordered list element">GitBash</li>
+          <li title="ordered list element">Tailwind</li>
         </ol>
       </section>
       <br>
       <hr>
       <section class="projects">
-        <h3>PROJECTS</h3>
+        <h3 title="h3 element">PROJECTS</h3>
         <article>
           <div>
-            <h5>Recipe Blog</h5>
-            <p>
+            <h5 title="h5 element">Recipe Blog</h5>
+            <p title="paragraph">
               A simple one page blog website that shows how to prepare a classic
               cheesecake. This was created using only HTML and CSS
             </p>
-            <a
+            <a title="anchor tag"
               href="https://lydia-recipe-blog.netlify.app/"
               class="project-button"
               >See it live</a
             >
           </div>
           <div>
-            <h5>Chart Presentation</h5>
-            <p>
+            <h5 title="h5 element">Chart Presentation</h5>
+            <p title="paragraph element">
               A simple one page representing data in three different formats:
               bar chart, pie chart and table. This was created using HTML, CSS
               and Javascript
             </p>
-            <a
+            <a title="anchor tag"
               href="https://cyphercrescent-lydia-project.netlify.app/"
               class="project-button"
               >See it live</a
@@ -125,24 +129,25 @@
         <br>
         <hr>
       </section>
-      <section class="video-testimonial">
-          <h3>Client Testimonials</h3>
+      <section id="video-testimonial">
+          <h3 title="h3 element">Client Testimonials</h3>
           <div class="videos" style="text-align: center;">
-              <video autoplay loop src="video/Q&A Interactive Reels Video (2).mp4" style="width: 300px;"></video>
-              <video autoplay loop src="video/Q&A Interactive Reels Video (2).mp4" style="width: 300px;"></video>
-              <video autoplay loop src="video/Q&A Interactive Reels Video (2).mp4" style="width: 300px;"></video>
+              <video title="video element" autoplay loop src="video/Q&A Interactive Reels Video (2).mp4" style="width: 300px;"></video>
+              <video title="video element" autoplay loop src="video/Q&A Interactive Reels Video (2).mp4" style="width: 300px;"></video>
+              <video title="video element" autoplay loop src="video/Q&A Interactive Reels Video (2).mp4" style="width: 300px;"></video>
           </div>
       </section>
       <br>
       <hr>
-      <section class="contact">
-        <h3>CONTACT</h3>
-        <p class="contact-text">
+      <section id="contact">
+        <h3 title="h3 element">CONTACT</h3>
+        <p title="paragraph element" class="contact-text">
           If you'd like to work with me, you can drop me a message!
         </p>
-        <a href="mailto:egolydia97@gmail.com" class="button">Let's Talk</a>
-        <p>Find me <strong>here!</strong></p>
+        <a title="anchor tag" href="mailto:egolydia97@gmail.com" class="button">Let's Talk</a>
+        <p title="paragraph element">Find me <strong title="strong element">here!</strong></p>
         <iframe
+          title="iframe element"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d213996.86781958753!2d6.872318341904399!3d4.874716717298218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cea39f2c48e3%3A0x53562bdd7d8832db!2sPort%20Harcourt!5e0!3m2!1sen!2sng!4v1648201697007!5m2!1sen!2sng"
           width="1150"
           height="200"
@@ -154,8 +159,8 @@
       </section>
     </main>
     <br>
-    <footer class="footer" style="padding: 50px; background: black; ">
-        <p class="footer-text" style="color: white; text-align: center;">&copy; 2022-Portfolio design by Lydia Ego</p>
+    <footer id="footer" style="padding: 50px; background: black; ">
+        <p title="paragraph element" class="footer-text" style="color: white; text-align: center;">&copy; 2022-Portfolio design by Lydia Ego</p>
     </footer>
   </body>
 </html>
